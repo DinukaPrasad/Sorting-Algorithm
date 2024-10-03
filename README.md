@@ -1,6 +1,1 @@
-# Sorting algorithm
-- Bubble sorting
-- Insertion sorting
-- Selection sorting
-
-## Written by java 
+# Selection sorting algorithm development branch 

@@ -15,8 +15,9 @@ public class Selection {
         int in,out,min;
 
         for(out = 0;out<arr.length;out++){
-            min = out;
-            for(in=1;in<arr.length;in++){
+
+            for(in=arr.length-1;in>out;in--){
+                min = out;
 
                 if(arr[in]<arr[min]){
                     min = in;
