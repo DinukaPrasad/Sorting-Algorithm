@@ -12,21 +12,21 @@ public class Selection {
     }
 
     public static void selection(int arr[]){
+        
         int in,out,min;
 
         for(out = 0;out<arr.length;out++){
 
+            min = out;
+
             for(in=arr.length-1;in>out;in--){
-                min = out;
+                
 
                 if(arr[in]<arr[min]){
                     min = in;
-                    
-                    int temp = arr[out];
-                    arr[out] = arr[min];
-                    arr[min] = temp;
                 }  
-            } 
+            }
+            swap(out, min, arr); 
         }
     }
 
@@ -34,5 +34,13 @@ public class Selection {
         for(int i=0; i<arr.length;i++){
             System.out.println(i+".Index - "+arr[i]);
         }
+    }
+
+    public static void swap(int x,int y,int[]arr){
+        int temp;
+
+        temp = arr[x];
+        arr[x] = arr[y];
+        arr[y] = temp;
     }
 }
