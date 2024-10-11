@@ -11,13 +11,9 @@ public class Bubble {
 
         System.out.println("\n");
 
-        try {
-
             BubbleSort(arr); 
 
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        
     }
 
     //Bubble sort method
