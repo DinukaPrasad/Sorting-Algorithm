@@ -2,7 +2,7 @@ package Sorting;
 
 public class Insertion {
 
-     public void insertion(int arr[]){
+    Insertion (int arr[]){
 
         for (int out = 1; out < arr.length; out++) {
 
@@ -14,7 +14,7 @@ public class Insertion {
                 in--;        
             }
             arr[in+1]=temp;
-            }   
-        }
+        }   
     }
+}
 
