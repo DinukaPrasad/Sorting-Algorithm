@@ -1,23 +1,8 @@
 package Sorting;
 
 public class Bubble {
-    public static void main(String[] args){
-
-        int arr[] = {2,1,4,7,3,9};
-
-        System.out.println("before Sorting array\n");
-
-        print(arr);  //call print method to print Unsorted array;
-
-        System.out.println("\n");
-
-            BubbleSort(arr); 
-
-        
-    }
-
     //Bubble sort method
-    public static void BubbleSort(int arr[]){
+    public void BubbleSort(int arr[]){
 
         for(int o = arr.length;o>1;o--){        // Outer loop 
 
@@ -28,15 +13,11 @@ public class Bubble {
                     swap(arr, i);               // call swap method to swap indexes
                 }
             }
-        }
-
-
-        System.out.println("After Sorting\n");
-        print(arr);                          // call print method to print sorted array
+        } 
     }
 
     //Swap method
-    public static void swap(int arr[],int i){
+    public void swap(int arr[],int i){
         int temp = arr[i];
         arr[i] = arr[i+1];
         arr[i+1] = temp;
@@ -44,7 +25,7 @@ public class Bubble {
     }
 
     //Print method
-    public static void print(int arr[]){
+    public void print(int arr[]){
         for(int i=0; i<arr.length;i++){
             System.out.println(i+".Index - "+arr[i]);
         }

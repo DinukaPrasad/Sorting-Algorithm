@@ -2,7 +2,7 @@ package Sorting;
 
 public class Insertion {
 
-    Insertion (int arr[]){
+    public void insertion (int arr[]){
 
         for (int out = 1; out < arr.length; out++) {
 
